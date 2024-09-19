@@ -1,1 +1,2 @@
-https://celke.com.br/artigo/tabela-de-cores-html-nome-hexadecimal-rgb
+💻 Porfolio construído para disciplina de Desenvolvimento Web I da Faesa. <br/>
+👩🏻‍🎓Aluna: Mylena L. Bortolozzo.
