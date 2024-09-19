@@ -1,0 +1,312 @@
+html {
+    scroll-behavior: smooth; /*Deslizar suave*/
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #D3D3D3;
+    overflow-x: hidden;
+    background-color: #D3D3D3;
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f39c12;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Estilo da Seção Título */
+section#sessao-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+    background: linear-gradient(90deg, #4b0082 50%, #f39c12 50%);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.titulo-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.textos {
+    flex: 1;
+    color: #ffffff;
+    padding-right: 20px;
+}
+
+.textos h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.textos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+.textos p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #d3d3d3;
+}
+
+.imagem-titulo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-perfil {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.imagem-titulo::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 5px solid white;
+    top: -10px;
+    right: -10px;
+    z-index: 1;
+}
+/* Estilo da Section Título */
+
+
+/* Estilo da Seção Sobre Mim */
+section#sobre {
+    background-color: #D3D3D3;
+    padding: 60px 20px;
+    color: #333;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sobre-container img.minha-foto {
+    width: 250px; 
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+    position: relative;
+    padding: 5px;
+    background: linear-gradient(90deg, #4b0082 0%, #f39c12 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.sobreMim {
+    flex: 1;
+    text-align: left;
+}
+
+.sobreMim p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-container img.minha-foto {
+        margin-bottom: 20px;
+    }
+}
+/* Estilizando a Seção Sobre Mim */
+
+/* Estilizando a Seção de Projetos */
+section#projetos {
+    background-color: #D3D3D3;
+    padding: 60px 20px;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos {
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.grid-projetos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.projeto-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    flex-basis: calc(50% - 20px);
+    box-sizing: border-box; 
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projeto-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.projeto-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.projeto-item p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilizando a Seção de Contato */
+section#contato {
+    background-color: #D3D3D3;
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+}
+
+section#contato h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section#contato p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+section#contato a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section#contato a:hover {
+    color: #e67e22;
+}
+
+section#contato ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+section#contato ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section#contato ul li a {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+section#contato ul li img {
+    width: 30px;
+    height: auto;
+    margin-right: 8px;
+}
+
+section#contato ul li a:hover {
+    color: #f39c12;
+}
+/* Estilizando a Seção de Contato */
+
+/* Estilo do Footer */
+footer {
+    background-color: #f39c12;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+} 
